@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="carrinho.css"/>
+    <link rel="stylesheet" href="../index/site.css"/>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Coda&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+      </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="../../public/images/logo.svg" alt="" width="100px" height="50px" />
+             </div>
+            <div class="menu">
+                <div class="menu-item"><a href=""> Lançamento</a></div>
+                <div class="menu-item"><a href=""> Feminino</a></div>
+                <div class="menu-item"><a href=""> Masculino</a></div>
+                <div class="menu-item"><a href=""> Infantil</a></div>
+            </div>
+            <div class="menu-botao">
+                <button><img src="../../public/images/carrinho.svg" alt="" /></button>
+            </div>
+        </div>
+
+        <div class="conteudo1">
+            <div class="titulos">
+                <div class="titulo">Meu Carrinho</div>
+                <div class="titulo">Resumo da Compra</div>
+            </div>
+
+            <div class="meu-carrinho">
+            <div class="produto">
+                <div class="imagem-produto">
+                    <img src="../../public/images/camisa_corinthians.svg" />
+                </div>
+                <div class="textos">
+                    <div class="titulo-produto">Camisa Corinthians II 21/22 s/n° Estádio Nike Masculina</div>
+                    <div class="vendido-entregue-por">Vendido e entregue por <span>Destiny</span></div>
+                    <div class="cor">Cor: <span class="cinza">Preto+Branco</span></div>
+                    <div class="tamanho">Tamanho: <span class="cinza">G</span></div>
+                    <form>
+                        <input type="checkbox" name="presente" value="presente"> Para Presente
+                        </form>
+                </div>
+                
+                <div class="qtd-e-valor">
+                    <div class="quantidade">
+                        <div class="menos">
+                            <button>-</button>
+                        </div>
+                        <div class="qtd">
+                            <input type="number"></input>
+                        </div>
+                        <div class="mais">
+                            <button>+</button>
+                        </div>
+                    </div>
+                    <div class="valor">R$ 179,99</div>
+                </div>
+            </div>
+
+            <div class="frete">
+                Calcular frete
+                <br>
+                <input type="text" id="cep" name="cep"></input>
+                <button>Calcular</button>
+            </div>
+            </div>
+
+            <div class="resumo-compra">
+                <div class="subtotal">Subtotal(1 item)</div>
+                <div class="subtotal-valor">R$ 179,99</div>
+                <hr>
+                <div class="descontos">Descontos</div>
+                <div class="descontos-valor">R$ 0,00</div>
+                <hr>
+                <div class="total">Total</div>
+                <div class="total-valor">R$ 179,99</div>
+                <div class="par0celas-disponiveis">Em até <span class="cinza-escuro">4x</span> de <span class="cinza-escuro">R$ 45,00</span> sem juros</div>
+                <div class="botoes">
+                    <button class="finalizar"><a>Finalizar Compra</a></button>
+                    <button class="continuar"><a>Continuar Comprando</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteudo2">
+            <div class="titulo2">Aproveite Também</div>
+            <div class="produtos-sugeridos">
+                <div class="box">
+                    <div class="imagem">
+                    <img src="../../public/images/shorts nike preto.svg" />
+                    </div>
+                    <div class="titulo-sugeridos">Bermuda Nike Monster Mesh 5.0 Masculina - Preto+Branco</div>
+                    <div class="valor-sugeridos">R$ 89,99</div>
+
+                    <select name="tamanhos-roupas" id="tamanhos-roupas">
+                    <option>Tamanho</option>
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                    <option value="EXG">EXG</option>
+                    </select>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="box">
+                    <div class="imagem">
+                    <img src="../../public/images/calça azul feminina.svg" />
+                    </div>
+                    <div class="titulo-sugeridos">Calça MLB New York Yankees New Era College Stripe Feminina - Marinho</div>
+                    <div class="valor-sugeridos">R$ 269,90</div>
+
+                    <select name="tamanhos-roupas" id="tamanhos-roupas">
+                    <option>Tamanho</option>
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                    <option value="EXG">EXG</option>
+                    </select>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="box">
+                    <div class="imagem">
+                    <img src="../../public/images/nike sb azul e lilás.svg" />
+                    </div>
+                    <div class="titulo-sugeridos">Tênis Nike SB Chron 2 - Lilás+Azul</div>
+                    <div class="valor-sugeridos">R$ 449,99</div>
+
+                    <select name="tamanhos-calçados" id="tamanhos-calçados">
+                    <option>Tamanho</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    </select>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="box">
+                    <div class="imagem">
+                    <img src="../../public/images/camisa real madrid.svg" />
+                    </div>
+                    <div class="titulo-sugeridos">Camisa Real Madrid Home 20/21 s/n° Torcedor Adidas Masculina - Branco</div>
+                    <div class="valor-sugeridos">R$ 159,99</div>
+
+                    <select name="tamanhos-roupas" id="tamanhos-roupas">
+                    <option>Tamanho</option>
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                    <option value="EXG">EXG</option>
+                    </select>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="faixa-6">
+            <div class="rodape">
+              <div class="box-cartao">
+                <div class="opcoes"><img src="../../public/images/boleto.svg" alt="" /></div>
+                <div class="opcoes"><img src="../../public/images/pix.svg" alt="" /></div>
+                <div class="opcoes"><img src="../../public/images/elo.svg" alt="" /></div>
+                <div class="opcoes"><img src="../../public/images/hiper.svg" alt="" /></div>
+                <div class="opcoes"><img src="../../public/images/master.svg" alt="" /></div>
+                <div class="opcoes"><img src="../../public/images/visa.svg" alt="" /></div>
+              </div>
+    
+              <div class="contato">
+                <div class="fale"><b>Fale Conosco: </b></div>
+                <div class="email">contato@destiny.com</div>
+                <div class="email">0800-773-3475</div>
+                <div class="redes">
+                  <div class="face"><img src="../../public/images/face.svg" alt="" /></div>
+                  <div class="face"><img src="../../public/images/insta.svg" alt="" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
+    </div>
+    </body>
